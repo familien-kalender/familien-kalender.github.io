@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /flyer.html
+Sitemap: https://familien-kalender.github.io/sitemap.xml

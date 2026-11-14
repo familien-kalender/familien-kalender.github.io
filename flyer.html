@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Familienkalender – Flyer</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{--ink:#14213d;--accent:#2f8fd8;--soft:#eef4fb;--gold:#f4b400}
+  *{box-sizing:border-box}
+  body{margin:0;background:#dfe5ec;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink)}
+  .hinweis{max-width:210mm;margin:16px auto;padding:12px 16px;background:#fff;border-radius:12px;font-size:15px;line-height:1.5}
+  .hinweis button{font:inherit;font-weight:700;padding:10px 16px;border-radius:10px;border:0;background:var(--accent);color:#fff;margin-top:6px}
+  .seite{width:210mm;min-height:297mm;margin:0 auto 24px;background:#fff;padding:14mm 14mm 10mm;display:flex;flex-direction:column;gap:7mm;box-shadow:0 4px 18px rgba(0,0,0,.15)}
+  .kopf{display:flex;align-items:center;gap:6mm}
+  .kopf img{width:26mm;height:26mm;border-radius:6mm}
+  h1{font-size:34pt;margin:0;line-height:1.05;letter-spacing:-.5px}
+  .unter{font-size:15pt;margin:2mm 0 0;color:#3a4a68}
+  .pills{display:flex;flex-wrap:wrap;gap:3mm}
+  .pills span{background:var(--soft);border-radius:99px;padding:2mm 4mm;font-weight:700;font-size:12pt}
+  .mitte{display:grid;grid-template-columns:1fr 1.1fr;gap:8mm;align-items:start}
+  .liste{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3.2mm;font-size:12.5pt;line-height:1.35}
+  .liste li{display:flex;gap:3mm}.liste b{display:block}
+  .liste .i{font-size:17pt;line-height:1}
+  .bilder{display:flex;gap:3mm;justify-content:center}
+  .bilder img{width:32.5%;border-radius:4mm;box-shadow:0 2mm 6mm rgba(0,0,0,.18);border:1px solid #ccd5e0}
+  .qrbox{display:flex;align-items:center;gap:7mm;border:2.5px dashed var(--accent);border-radius:6mm;padding:6mm;margin-top:auto}
+  .qrbox img{width:42mm;height:42mm}
+  .qrbox h2{margin:0 0 2mm;font-size:20pt}
+  .qrbox p{margin:0 0 2mm;font-size:12.5pt;line-height:1.4}
+  .url{font-weight:800;font-size:14pt;color:var(--accent)}
+  .fuss{text-align:center;font-size:9pt;color:#6b7a90}
+  @media print{body{background:#fff}.hinweis{display:none}.seite{margin:0;box-shadow:none}@page{size:A4;margin:0}}
+  @media (max-width:800px){.seite{transform-origin:top left}}
+</style>
+</head>
+<body>
+<div class="hinweis">🖨️ <b>Flyer zum Ausdrucken</b> (A4). Ideal fürs Schwarze Brett in Kita, Schule, Sportverein oder Wartezimmer. Bitte vorher fragen, ob Aushängen erlaubt ist.<br>
+<button onclick="window.print()">🖨️ Jetzt drucken</button></div>
+<div class="seite">
+  <div class="kopf"><img src="icon-512.png" alt=""><div><h1>Familien&shy;kalender</h1><p class="unter">Alle Termine der Familie an einem Ort – live auf jedem Handy.</p></div></div>
+  <div class="pills"><span>✅ kostenlos</span><span>✅ ohne Anmeldung</span><span>✅ ohne Werbung</span><span>📱 Android &amp; iPhone</span></div>
+  <div class="mitte">
+    <ul class="liste">
+      <li><span class="i">👨‍👩‍👧</span><span><b>Eine Spalte pro Person</b>Jeder sieht sofort, wer wann was hat.</span></li>
+      <li><span class="i">💼</span><span><b>Arbeit, Urlaub &amp; Ferien</b>Schichten und Schulferien auf einen Blick.</span></li>
+      <li><span class="i">🔗</span><span><b>Lese-Link für Ex-Partner &amp; Großeltern</b>Sieht nur die Termine des Kindes.</span></li>
+      <li><span class="i">⭐</span><span><b>Sterne &amp; Belohnungen für Kinder</b>Mit Lernspielen für Mathe &amp; Deutsch.</span></li>
+      <li><span class="i">🛒</span><span><b>Einkaufsliste &amp; Essensplan</b>Gemeinsam planen und einkaufen.</span></li>
+      <li><span class="i">🚗</span><span><b>Wer bringt, wer holt?</b>Fahrten mit einem Tipp verteilen.</span></li>
+    </ul>
+    <div class="bilder"><img src="img/woche.webp" alt="Wochenansicht"><img src="img/familie.webp" alt="Einkaufsliste"><img src="img/sterne.webp" alt="Sterne für Kinder"></div>
+  </div>
+  <div class="qrbox"><img src="img/qr.svg" alt="QR-Code zum Familienkalender"><div><h2>📷 Einfach scannen</h2><p>Mit der Handy-Kamera scannen und auf <b>„Erst mal ausprobieren“</b> tippen. Ganz ohne Anmeldung.</p><span class="url">familien-kalender.github.io</span></div></div>
+  <div class="fuss">Ein privates Projekt aus Berlin · Kostenlos, ohne Werbung · Datenschutz: familien-kalender.github.io/datenschutz.html</div>
+</div>
+</body>
+</html>
